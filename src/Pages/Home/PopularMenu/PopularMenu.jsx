@@ -8,8 +8,8 @@ const PopularMenu = () => {
     return (
         <section className='mb-12'>
             <SectionTitle
-            heading="From Our Menu"
-            subHeading="Popular Item"
+            heading="Best Sell"
+            subHeading="Product hunt ltd."
             >
 
             </SectionTitle>

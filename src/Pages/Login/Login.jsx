@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2';
 import SocialLogin from '../../Components/SocialLogin/SocialLogin';
+import LogInLogo from '../../../public/assets/logo.png'
 
 const Login = () => {
 
@@ -64,17 +65,15 @@ const Login = () => {
     return (
         <>
         <Helmet>
-                <title>84 Foodbar | Login</title>
+                <title>Product Hunt | Login</title>
             </Helmet>
         <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center md:w-1/2 lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-    </div>
+  <div className="text-center mx-7 md:w-1/2 lg:text-left relative">
+  <img className='mx-7 w-full' src={LogInLogo} alt="" />
+  <h1 className="text-5xl absolute top-[-50px] left-[60px] font-serif">Login now!</h1>
+</div>
+
     <div className="card bg-base-100 md:w-1/2 max-w-sm shadow-2xl">
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
@@ -99,11 +98,11 @@ const Login = () => {
           <input onBlur={handleValidateCaptchar} type="text" name='capture' placeholder="Chapture" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-          <input disabled={disable} className="btn btn-primary" type="submit" value="Login" />
+          <input disabled={disable} className="btn btn-primary font-mono" type="submit" value="Login" />
         </div>
       </form>
       <SocialLogin className='p-2'></SocialLogin>
-      <p className='p-2 text-center'><small>New Here? <Link to="/signup">Create an account</Link></small></p>
+      <p className='p-2 text-center font-mono'><small>New Here? <Link to="/signup" className='text-red-700'>Create an account</Link></small></p>
     </div>
   </div>
 </div>
