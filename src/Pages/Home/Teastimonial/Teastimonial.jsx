@@ -20,8 +20,7 @@ const Teastimonial = () => {
     return (
         <section className='my-20'>
             <SectionTitle
-            subHeading="What Our client Say!"
-            heading="Testimonials"
+            subHeading="customer satisfaction"
             ></SectionTitle>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
             {

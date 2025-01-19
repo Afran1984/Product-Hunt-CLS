@@ -60,9 +60,9 @@ const AddItems = () => {
                     {/* <input {...register("name")} /> */}
                     <label className="form-control mt-4 w-full">
                         <div className="label">
-                            <span className="label-text">Recipy Name</span>
+                            <span className="label-text">Product Name</span>
                         </div>
-                        <input type="text" placeholder="Enter Recipe name"
+                        <input type="text" placeholder="Enter Product name"
                         {...register('name', {required: true})}
                          className="input input-bordered w-full" />
                         </label>
@@ -74,11 +74,11 @@ const AddItems = () => {
                         </div>
                         <select defaultValue="default" {...register('category', {required: true})} className="select select-bordered w-full">
                         <option disabled value="default">Select a category!</option>
-                        <option>SALAD</option>
-                        <option>PIZZA</option>
-                        <option>SOUPS</option>
-                        <option>DESSERTS</option>
-                        <option>DRINKS</option>
+                        <option>ELECTRONIC</option>
+                        <option>RESTRURENT</option>
+                        <option>FASHION</option>
+                        <option>AUTOMOBILE</option>
+                        <option>REAL-STATE</option>
                     </select>
                         </label>
                         {/* Prices */}
@@ -86,7 +86,7 @@ const AddItems = () => {
                         <div className="label">
                             <span className="label-text">Price*</span>
                         </div>
-                        <input type="text" placeholder="Recipy Prices"
+                        <input type="text" placeholder="product Prices"
                         {...register('price', {required: true})}
                          className="input input-bordered w-full" />
                     </label>
@@ -94,9 +94,9 @@ const AddItems = () => {
                     {/* BIO Revwies */}
                     <label className="form-control">
                         <div className="label">
-                            <span className="label-text">Recipy Ditels</span>
+                            <span className="label-text">Product Ditels</span>
                         </div>
-                        <textarea {...register('recipe', {required: true})} className="textarea textarea-bordered h-24" placeholder="Add some Recipy Ditels"></textarea>
+                        <textarea {...register('recipe', {required: true})} className="textarea textarea-bordered h-24" placeholder="Add some Product Ditels"></textarea>
                     </label>
                     {/* file Input */}
                     <div className="form-control w-full mt-4">
