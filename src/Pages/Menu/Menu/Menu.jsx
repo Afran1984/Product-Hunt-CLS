@@ -1,10 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 import Cover from '../../Shared/Cover/Cover';
-import menuImg from '../../../assets/menu/banner3.jpg';
-import dessertImg from '../../../assets/menu/dessert-bg.jpeg';
-import PizzaImg from '../../../assets/menu/pizza-bg.jpg';
-import SoupImg from '../../../assets/menu/soup-bg.jpg';
-import saladImg from '../../../assets/menu/salad-bg.jpg';
+import menuImg from '../../../../public/assets/p1.png';
+import dessertImg from '../../../../public/assets/a1.png';
+import PizzaImg from '../../../../public/assets/r1.png';
+import SoupImg from '../../../../public/assets/f1.png';
+import saladImg from '../../../../public/assets/e1.png';
 import useMenu from '../../../Hooks/useMenu';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import MenuCategory from '../MenuCategory/MenuCategory';
@@ -19,9 +19,9 @@ const Menu = () => {
     return (
         <div>
             <Helmet>
-                <title>84 Foodbar | Menu</title>
+                <title>Product Hunt | Menu</title>
             </Helmet>
-            <Cover menuImage={menuImg} title="Our Menu"></Cover>
+            <Cover menuImage={menuImg} title="Our Products"></Cover>
             {/* main Cover */}
             <SectionTitle
             subHeading="Don't Miss" heading="Today's Offer"
@@ -32,25 +32,25 @@ const Menu = () => {
             {/* dessert Menu Items */}
             <MenuCategory
             items={dessert}
-            title="desert"
+            title="Automobiles"
             img={dessertImg}
             ></MenuCategory>
             {/* Pizza */}
             <MenuCategory
             items={pizza}
-            title="pizza"
+            title="Restrurent"
             img={PizzaImg}
             ></MenuCategory>
             {/* Salad */}
             <MenuCategory
             items={salad}
-            title="salad"
+            title="Electronic"
             img={saladImg}
             ></MenuCategory>
             {/* soup */}
             <MenuCategory
             items={soup}
-            title="soup"
+            title="Fashion"
             img={SoupImg}
             ></MenuCategory>
             

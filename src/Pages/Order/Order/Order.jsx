@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import orderCoverImg from '../../../assets/shop/banner2.jpg';
+import orderCoverImg from '../../../../public/assets/13.png';
 import Cover from '../../Shared/Cover/Cover';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -21,16 +21,16 @@ const Order = () => {
     return (
         <div>
             <Helmet>
-                <title>84Foodbar | Order Food</title>
+                <title>Product Hunt | Order Product</title>
             </Helmet>
-            <Cover menuImage={orderCoverImg} title="Order Food" ></Cover>
+            <Cover menuImage={orderCoverImg} title="Order Product" ></Cover>
             <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
-                    <Tab>SALAD</Tab>
-                    <Tab>PIZZA</Tab>
-                    <Tab>SOUPS</Tab>
-                    <Tab>DESSERTS</Tab>
-                    <Tab>DRINKS</Tab>
+                    <Tab>Electronic</Tab>
+                    <Tab>Restrurent</Tab>
+                    <Tab>Fashion</Tab>
+                    <Tab>Automobile</Tab>
+                    <Tab>Realstate</Tab>
                 </TabList>
                 <TabPanel>
                 <OrderTab items={salad}></OrderTab>
